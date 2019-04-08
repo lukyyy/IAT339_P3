@@ -2,47 +2,152 @@
 <html>
 <head>
     <title>Luke's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="main/main.css">
-
+    
 </head>
 <body>
-    <div class="main-container">
+    <nav class="menu-leftactive">
+        <h1>Luke Yang</h1>
+        <ul>
+            <li>Home</li>
+            <li>Project</li>
+            <li>Resume</li>
+            <li>Style Guide</li>
+            <li>Respirotary</li>
 
-
-        <div class="box" id="box1">
-            <div class="content">
-                <h2> 01</h2>
-                <h3> Project 1</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                <a href="#">Read More</a>
+        </ul> 
+        
+    </nav>
+    <main>
+        <div class="main-pic">
+            <div class="main-text">
+                <h1 style="font-size:50px">Hi! I am Luke Yang</h1>
+                <p> I am a fourth-year student at Simon Fraser University with major of School of Interactive Arts and Technology.
+                    <br>My focus is studying game design, web development and last but not least, coding. 
+                    <br>My goal is a Programmar/Designer who seeks to link people through emerging technological arts.
+                </p>
+                <!-- <h3></h3> -->
+                <!-- <button>Hire me</button> -->
             </div>
         </div>
-        <div class="box" id ="box2">
-            <div class="content">
-                <h2> 02</h2>
-                <h3> Project 2</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                <a href="#">Read More</a>
+        
+        <div class="main-container">
+            
+            
+            <div class="box" id="box1">
+                <div class="content">
+                    <h2> 01</h2>
+                    <h3> Project 1</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
             </div>
+            <div class="box" id ="box2">
+                <div class="content">
+                    <h2> 02</h2>
+                    <h3> Project 2</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            
+            <div class="box" id= "box3">
+                <div class="content">
+                    <h2> 03</h2>
+                    <h3> Project 3</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box" id="box1">
+                <div class="content">
+                    <h2> 01</h2>
+                    <h3> Project 1</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box" id ="box2">
+                <div class="content">
+                    <h2> 02</h2>
+                    <h3> Project 2</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            
+            <div class="box" id= "box3">
+                <div class="content">
+                    <h2> 03</h2>
+                    <h3> Project 3</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box" id="box1">
+                <div class="content">
+                    <h2> 01</h2>
+                    <h3> Project 1</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="box" id ="box2">
+                <div class="content">
+                    <h2> 02</h2>
+                    <h3> Project 2</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            
+            <div class="box" id= "box3">
+                <div class="content">
+                    <h2> 03</h2>
+                    <h3> Project 3</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            
+            
+            
         </div>
-        <!-- 
-        <div class="box" id= "box3">
-            <div class="content">
-                <h2> 03</h2>
-                <h3> Project 3</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                <a href="#">Read More</a>
-            </div>
-        </div>
-        <div class="box" id= "box4">
-            <div class="content">
-                <h2> 03</h2>
-                <h3> Project 3</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                <a href="#">Read More</a>
-            </div>
-        </div> -->
-
-    </div>
+    </main>
+    <script>
+        (function(){
+            var nav = $('nav'),
+            menu = $('nav h1'),
+            main = $('main'),
+            open = false,
+            hover = false;
+            
+            menu.on('click', function(){
+                open = !open ? true : false;
+                nav.toggleClass('menu-active');
+                main.toggleClass('menu-active');
+                nav.toggleClass('menu-hover');
+                main.toggleClass('menu-hover');
+                console.log(open);
+            });
+            
+            menu.hover(
+            function(){
+                if(!open){
+                    nav.addClass('menu-hover');
+                    main.addClass('menu-hover');
+                } else {
+                    nav.addClass('menu-unhover');
+                    main.addClass('menu-unhover');
+                }
+            }, function(){
+                nav.removeClass('menu-hover');
+                nav.removeClass('menu-hover');
+            }
+            )
+            
+        })();
+    </script>
 </body>
 </html>
