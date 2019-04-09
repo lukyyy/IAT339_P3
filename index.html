@@ -4,18 +4,21 @@
     <title>Luke's Portfolio</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="main/main.css">
-    
+    <!-- Social Media Font Import -->
+    <!-- From: https://www.youtube.com/watch?v=fDm0WJ_66d0&list=WL&index=22&t=0s -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
 </head>
 <body>
     <nav class="menu-leftactive">
         <h1>Luke Yang</h1>
         <ul>
             <li>Home</li>
-            <li>Project</li>
+            <a href="index.html#projectSection"><li>Project</li></a>
             <li>Resume</li>
             <li>Style Guide</li>
             <li>Respirotary</li>
-
+            
         </ul> 
         
     </nav>
@@ -25,93 +28,57 @@
                 <h1 style="font-size:50px">Hi! I am Luke Yang</h1>
                 <p> I am a fourth-year student at Simon Fraser University with major of School of Interactive Arts and Technology.
                     <br>My focus is studying game design, web development and last but not least, coding. 
-                    <br>My goal is a Programmar/Designer who seeks to link people through emerging technological arts.
+                    My goal is a Programmar/Designer who seeks to link people through emerging technological arts.
                 </p>
-                <!-- <h3></h3> -->
-                <!-- <button>Hire me</button> -->
             </div>
         </div>
         
         <div class="main-container">
-            
-            
             <div class="box" id="box1">
-                <div class="content">
-                    <h2> 01</h2>
-                    <h3> Project 1</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
+                <div class="content" id="projectSection">
+                    <h3> Adventure of Pergie</h3>
+                    <p>2D platformer puzzle game. Help Pergie to reunite with his mother!  </p>
+                    <a href="https://www.naver.com" id="anchorTag">See Detail</a>
+                    
                 </div>
             </div>
             <div class="box" id ="box2">
                 <div class="content">
-                    <h2> 02</h2>
-                    <h3> Project 2</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
+                    <h3>GamesBond</h3>
+                    <p> Game review website that emphasizes public users' score versus cricts. Visit the website and join our community! </p>
+                    <a href="www.naver.com">See Detail</a>
                 </div>
             </div>
             
             <div class="box" id= "box3">
                 <div class="content">
-                    <h2> 03</h2>
-                    <h3> Project 3</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+                    <h3>Enlighten Me</h3>
+                    <p> Animation film that a wanderer seek a friend. How will a lonley wanderer will find his new friend? </p>
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="box" id="box1">
-                <div class="content">
-                    <h2> 01</h2>
-                    <h3> Project 1</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
+            <div class="box" id="box4">
+                <div class="content" >
+                    <h3> Wonder Kitty</h3>
+                    <p> Have you ever experienced interactive story book toy? Check out the story of Wonder kitty and play with her!</p>
                     <a href="#">Read More</a>
                 </div>
             </div>
-            <div class="box" id ="box2">
+            <div class="box" id ="box5">
                 <div class="content">
-                    <h2> 02</h2>
-                    <h3> Project 2</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
+                    <h3> Preparing!</h3>
+                    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p> -->
+                    <!-- <a href="#">Read More</a> -->
                 </div>
             </div>
             
-            <div class="box" id= "box3">
+            <div class="box" id= "box6">
                 <div class="content">
-                    <h2> 03</h2>
-                    <h3> Project 3</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
+                    <h3> Preparing!</h3>
+                    <!-- <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p> -->
+                    <!-- <a href="#">Read More</a> -->
                 </div>
             </div>
-            <div class="box" id="box1">
-                <div class="content">
-                    <h2> 01</h2>
-                    <h3> Project 1</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            <div class="box" id ="box2">
-                <div class="content">
-                    <h2> 02</h2>
-                    <h3> Project 2</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            
-            <div class="box" id= "box3">
-                <div class="content">
-                    <h2> 03</h2>
-                    <h3> Project 3</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ut error ipsam pariatur aut!</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-            
-            
             
         </div>
     </main>
@@ -149,5 +116,21 @@
             
         })();
     </script>
+    
+    <footer> 
+        <div class="footer-container">
+            <div class="middle">
+                <a class="btn" href="https://www.facebook.com/profile.php?id=100004168532253&ref=bookmarks">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="https://www.instagram.com/lukyyang/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="https://www.youtube.com/channel/UC7h4_DZ3s2hKqH_2dwWWOtQ?view_as=subscriber">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
