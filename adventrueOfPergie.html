@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <title>Luke's Portfolio</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="main/main.css">
     <link rel="stylesheet" type="text/css" href="main/adventureOfPergie.css">
-
+    
     
     <!-- Social Media Font Import -->
     <!-- From: https://www.youtube.com/watch?v=fDm0WJ_66d0&list=WL&index=22&t=0s -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-
+    
 </head>
 <body>
     <nav class="menu-leftactive">
@@ -18,16 +21,84 @@
         <ul>
             <a href="index.html"><li>Home</li></a>
             <a href="index.html#projectSection"><li>Project</li></a>
-            <a href="#"><li>Resume</li></a>
+            <a href="https://drive.google.com/open?id=1-PgQ113p-oiU-0hZsV3vRuuwj3BF4Fa5"><li>Resume</li></a>
             <a href="#"><li>Style Guide</li></a>
             <a href="#"><li>Respiratory</li></a>
         </ul> 
         
+        
     </nav>
     <main>
+        <header>
+            <div class="main-pic"></div>
+        </header>
+        <div class="aop-main-container">
+            <div class="aop-head-text">
+                <h1>Adventure of Pergie</h1>
+                <h2>IAT 410 Final Project</h2>
+            </div>
+            <div class="aop-header-detail">
+                <div class="col-6">
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/6Capo1ujSas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="project-detail">
+                        <h3>Tool Used</h3> <p>Unity</p>
+                        <h3>Role</h3> <p>Director/Coder </p>
+                        <h3>Goal:</h3> <p>Creating/Designing interactive game using unique concept. </p>
+                        <br> 
+                    </div>
+                </div>
+            </div>    
+        </div>
         
+        <div class="aop-sub-container">
+            <h2>Overview</h2>
+            <p>Adventure of Pergie is a 2D platformer puzzle game where the main character, Pergie tries to reunite with his mother. 
+                Pergie need to pass through obstacles, colored walls, to meet his mother once again. 
+                <br>The game provide both PC and Mac format. 
+            </p>
+            <div class="aop-pic">
+                <img src="images/adop_1.png">
+                <span class="caption">A sample game play</span>
+            </div>
+            
+            <h2>Concept</h2>
+            <p>Pergie's ability is that he is able to penetrate walls that shares same color with him. 
+            Also, Pergie can store up to three color for himself and change the color in order of he collected. 
+            There are several obstacles such as spikes, boxes, and walls that prevent Pergie to go higher to meet his mother.
+            <br>But by using his ability, Pergie can go up higher and higher.
+            </p>
+            <div class="aop-pic">
+                    <img src="images/adop_2.png">
+                    <span class="caption">One of story scenes in game</span>
+            </div>
+            <h2>Process</h2>
+            <p>As a director/coder of this project, I was responsible for deciding entire concept of the game and how the each puzzle in the game works such as level design, leading players, and others. 
+                <br>Also, for coding responsibility, I have implemented most of the mechanics in the game though C++ with Unity. The core mechanic, being able to penetrate through wall was the trickest part overall
+                and level designs. 
+            </p>
+            
+        </div>
     </main>
+    <script src="js/script.js">
+        window.onload = function() {
+            var left=document.getElementById('.col-5-left').getBoundingClientRect().height;
+            var right=document.getElementById('.col-5-right').getBoundingClientRect().height;
+            if(left>right) {
+                document.getElementById('.col-5-right').style.height=left+"px";
+            }
+            else {
+                document.getElementById('.col-5-left').style.height=right+"px";
+            }
+        };
+    </script>
+    
     <script>
+        
         (function(){
             var nav = $('nav'),
             menu = $('nav h1'),
