@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luke's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="main/main.css">
+    <link rel="stylesheet" type="text/css" href="main/adventureOfPergie.css">
+
+    
+    <!-- Social Media Font Import -->
+    <!-- From: https://www.youtube.com/watch?v=fDm0WJ_66d0&list=WL&index=22&t=0s -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+</head>
+<body>
+    <nav class="menu-leftactive">
+        <h1>Luke Yang</h1>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="index.html#projectSection"><li>Project</li></a>
+            <a href="#"><li>Resume</li></a>
+            <a href="#"><li>Style Guide</li></a>
+            <a href="#"><li>Respiratory</li></a>
+        </ul> 
+        
+    </nav>
+    <main>
+        
+    </main>
+    <script>
+        (function(){
+            var nav = $('nav'),
+            menu = $('nav h1'),
+            main = $('main'),
+            open = false,
+            hover = false;
+            
+            menu.on('click', function(){
+                open = !open ? true : false;
+                nav.toggleClass('menu-active');
+                main.toggleClass('menu-active');
+                nav.toggleClass('menu-hover');
+                main.toggleClass('menu-hover');
+                console.log(open);
+            });
+            
+            menu.hover(
+            function(){
+                if(!open){
+                    nav.addClass('menu-hover');
+                    main.addClass('menu-hover');
+                } else {
+                    nav.addClass('menu-unhover');
+                    main.addClass('menu-unhover');
+                }
+            }, function(){
+                nav.removeClass('menu-hover');
+                nav.removeClass('menu-hover');
+            }
+            )
+            
+        })();
+    </script>
+    
+    <footer> 
+        <div class="footer-container">
+            <div class="middle">
+                <a class="btn" href="https://www.facebook.com/profile.php?id=100004168532253&ref=bookmarks">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="https://www.instagram.com/lukyyang/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="https://www.youtube.com/channel/UC7h4_DZ3s2hKqH_2dwWWOtQ?view_as=subscriber">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
