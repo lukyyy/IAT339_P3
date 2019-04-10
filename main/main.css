@@ -8,6 +8,12 @@ body{
     perspective-origin: 0% 50%;
     perspective: 1000px;
 }
+h1{
+    font-family: 'Dokdo', cursive;
+}
+p, nav li{
+    font-family: 'Poppins', sans-serif;
+}
 
 nav,main{
     transition: transform 150ms ease-out;
@@ -43,7 +49,7 @@ nav h1 {
     height: 80px;
     width: 250px;
     line-height: 80px;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 300;
     letter-spacing: 2px;
     color: #87AFFF;
@@ -56,7 +62,7 @@ nav h1 {
 
 nav h1:hover, nav h1:focus, nav h1:active {
     transition: 0.5s ease-in-out;
-    font-size: 2.1em;
+    font-size: 2.5em;
 }
 
 
@@ -130,7 +136,7 @@ main:after{
 /* When nav clicked, transform the main content */
 main.menu-active{
     border-radius: 0.001px;
-    transform: translateX(16em) rotateY(15deg);
+    transform: translateX(16em) rotateY(8deg);
 }
 
 main.menu-active:after {
@@ -171,7 +177,7 @@ main.menu-active:after {
     position: relative;
     width: 80%;
     margin: auto;
-    margin-top: 250px;
+    margin-top: 180px;
     padding: 0 0 0 100px;
     color: white;
 }
@@ -185,7 +191,7 @@ main.menu-active:after {
     margin: 0;
     width: 70%;
     text-align: left;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 /* box contanier */
@@ -300,20 +306,22 @@ main.menu-active:after {
     position: relative;
     padding: 20px;
     /* transform: translateY(10px); */
-    width: 70%;
+    width: 75%;
 }
 
 /*Project title before hovering */
 .box .content h3 {
     text-align: center;
-    margin: 50px 0 0 0px;
-    font-size: 2em;
+    margin: 20px 0 0 0px;
+    font-size: 2.5em;
     font-weight: 500;
     color:#fff;
     transition: .5s;
     transform: translateY(-40px);
     opacity: 0;
     visibility: hidden;
+    font-family: 'Dokdo', cursive;
+
 }
 
 /* Hovering to box project title */
@@ -328,7 +336,7 @@ main.menu-active:after {
     margin: 30px 0 0 0;
     padding: 0;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.3em;
     visibility: hidden;
     transition: .5s;
     transform: translateY(-40px);

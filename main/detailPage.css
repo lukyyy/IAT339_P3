@@ -1,6 +1,6 @@
 nav h1:hover, nav h1:focus, nav h1:active {
     transition: 0.5s ease-in-out;
-    font-size: 2.1em;
+    font-size: 2.5em;
     color: #ffc107;
 }
 
@@ -12,6 +12,10 @@ main {
     transform-origin: 0% 50%;
     background-size: cover;
     display: block;
+}
+
+main.menu-active{
+    border-radius: 0.001px;
 }
 
 .aop-main-container {
@@ -27,14 +31,19 @@ main {
 }
 
 .aop-head-text h1 {
-    font-size: 4em;
+    font-size: 5em;
     color: #1E7259;
+    margin:0;
 }
 
 .aop-head-text h2{
-    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
     color: white;
-    
+    magin:0;
+    margin-block-start: 0.2em;
+    margin-block-end: 1.4em;
+
 }
 /* rgba(23, 44, 87) */
 
@@ -70,13 +79,15 @@ main {
 .project-detail{
     position: absolute;
     margin: 0;
-    font-size: 1.2em;
+    font-size: 1em;
     width: 100%;
 
 }
 .project-detail h3{
     margin: 30px 0 0 30px;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 .project-detail p{
     margin: 0px 0 0 30px;
@@ -106,14 +117,17 @@ main {
     height: auto;
     /* background: rgba(80,204,167, 0.9); */
     box-shadow:inset 0 0 0 2000px rgba(80,204,167, 0.7);
-    padding: 80px 0 50px 0;
+    padding: 50px 0 50px 0;
 
 }
 
 .aop-sub-container h2{
     text-align: center;
-    font-size: 2.3em;
+    font-family: 'Dokdo', cursive;
+    font-size: 4em;
     color: white;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.5em;
 }
 
 .aop-sub-container p{
