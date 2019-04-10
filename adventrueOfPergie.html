@@ -9,7 +9,9 @@
     <link rel="stylesheet" type="text/css" href="main/main.css">
     <link rel="stylesheet" type="text/css" href="main/detailPage.css">
     <link rel="stylesheet" type="text/css" href="main/grid.css">
-
+    
+    <!-- Image Font import -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
     <!-- Social Media Font Import -->
     <!-- From: https://www.youtube.com/watch?v=fDm0WJ_66d0&list=WL&index=22&t=0s -->
@@ -70,13 +72,13 @@
             
             <h2>Concept</h2>
             <p>Pergie's ability is that he is able to penetrate walls that shares same color with him. 
-            Also, Pergie can store up to three color for himself and change the color in order of he collected. 
-            There are several obstacles such as spikes, boxes, and walls that prevent Pergie to go higher to meet his mother.
-            <br>But by using his ability, Pergie can go up higher and higher.
+                Also, Pergie can store up to three color for himself and change the color in order of he collected. 
+                There are several obstacles such as spikes, boxes, and walls that prevent Pergie to go higher to meet his mother.
+                <br>But by using his ability, Pergie can go up higher and higher.
             </p>
             <div class="aop-pic">
-                    <img src="images/adop_2.png">
-                    <span class="caption">One of story scenes in game</span>
+                <img src="images/adop_2.png">
+                <span class="caption">One of story scenes in game</span>
             </div>
             <h2>Process</h2>
             <p>As a director/coder of this project, I was responsible for deciding entire concept of the game and how the each puzzle in the game works such as level design, leading players, and others. 
@@ -86,6 +88,28 @@
             
         </div>
     </main>
+    <!-- Contact me! -->
+    <div class="sidebar-contact">
+        <div class="scrollable">
+            <div class="onoff"></div>
+            <h2> <div class="contactme-h2">Contact Me</div></h2>
+            <form>
+                <input type="text" name="" placeholder="Name">
+                <input type="email" name="" placeholder="Email">
+                <input type="rel" name="" placeholder="Phone Number">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" name="" value="Send">
+            </form>
+        </div>
+    </div>
+    <!-- javascript toggle contact me -->
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('.onoff').click(function(){
+                $('.sidebar-contact').toggleClass('active')
+            }) 
+        })
+    </script>
     <script src="js/script.js">
         window.onload = function() {
             var left=document.getElementById('.col-5-left').getBoundingClientRect().height;

@@ -8,12 +8,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <link rel="stylesheet" type="text/css" href="main/main.css">
     <link rel="stylesheet" type="text/css" href="main/grid.css">
-
+    <!-- Image Font import -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <!-- Social Media Font Import -->
     <!-- From: https://www.youtube.com/watch?v=fDm0WJ_66d0&list=WL&index=22&t=0s -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <!-- Font Import -->
     <link href="https://fonts.googleapis.com/css?family=Dokdo|Poppins" rel="stylesheet">
+    <script src="main.js"></script>
     
 </head>
 <body>
@@ -29,6 +32,7 @@
         
     </nav>
     <main>
+        
         <div class="main-pic">
             
         </div>
@@ -88,6 +92,31 @@
             
         </div>
     </main>
+
+    <!-- Contact me! -->
+    <div class="sidebar-contact">
+        <div class="scrollable">
+            <div class="onoff"></div>
+            <h2> <div class="contactme-h2">Contact Me</div></h2>
+            <form>
+                <input type="text" name="" placeholder="Name">
+                <input type="email" name="" placeholder="Email">
+                <input type="rel" name="" placeholder="Phone Number">
+                <textarea placeholder="Message"></textarea>
+                <input type="submit" name="" value="Send">
+            </form>
+        </div>
+    </div>
+    <!-- javascript toggle contact me -->
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $('.onoff').click(function(){
+                $('.sidebar-contact').toggleClass('active')
+            }) 
+        })
+    </script>
+
+    <!-- Shifting menu -->
     <script>
         (function(){
             var nav = $('nav'),
@@ -122,6 +151,7 @@
             
         })();
     </script>
+    
     
     <footer> 
         <div class="footer-container">

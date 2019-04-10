@@ -385,7 +385,6 @@ main.menu-active:after {
 }
 
 
-
 /* Image disappear */
 .box:hover, .box:focus, .box:active{
     filter: blur(0px);
@@ -395,6 +394,102 @@ main.menu-active:after {
 .box .content a:hover, .box .content a:focus, .box .content a:active {
     color: #000;
     background: #fff;
+}
+
+
+/* Contact me part */
+.contactme-h2{
+    font-family: 'Dokdo', cursive;
+    font-size: 2em;
+}
+.onoff{
+    position: absolute;
+    top: 0%;
+    left: -48px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    cursor: pointer;
+    background: #f00;
+    line-height: 48px;
+}
+
+.onoff:before{
+    content: '\f095';
+    font-family: fontAwesome;
+    color: #fff;
+}
+.onoff.active:before{
+    content: '\f00d';
+}
+
+.sidebar-contact{
+    position: fixed;
+    top: 20%;
+    right: -350px;
+    width: 350px;
+    height: auto;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    transform: translateY(-20%);
+    transition: 0.5s;
+}
+.sidebar-contact input, .sidebar-contact textarea{
+    width: 100%;
+    height: 36px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+.sidebar-contact.active{
+    right: 0px;
+}
+
+.sidebar-contact textarea{
+    height: 60px;
+    resize: none;
+}
+
+.sidebar-contact h2{
+    margin: 0 0 20px;
+    padding: 0;
+}
+.sidebar-contact input[type="submit"]{
+    width: 100%;
+    background: #00bcd4;
+    color: #fff;
+    cursor: pointer;
+    border:none;
+    font-style: 18px;
+}
+
+@media (max-width:768px){
+    .sidebar-contact{
+        width: 100%;
+        height: 50%;
+        right: -100%;
+    }
+    .sidebar-contact .onoff{
+        top: 50%;
+        transform: translateY(-50%);
+        transition: 0.5s;
+    }
+    .sidebar-contact.active .onoff{
+        top: 0;
+        right: 0;
+        transform: translateY(0);
+    }
+    .scrollable{
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
 }
 
 
@@ -441,6 +536,9 @@ main.menu-active:after {
     transition: 0.2s linear;
   }
 
+
+
+  
   /* Hovering  */
   .btn:hover i, .btn:focus i, .btn:active i {
     transform: scale(1.3);
