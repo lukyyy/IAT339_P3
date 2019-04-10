@@ -273,8 +273,7 @@ main.menu-active:after {
 
 .main-container .box:nth-child(1)::before{
     background: linear-gradient(315deg, #ff0000, #ffc107);
-    transform: skew(4deg, -4deg);
-    
+    transform: skew(4deg, -4deg); 
 }
 .main-container .box:nth-child(2)::before{
     background: linear-gradient(315deg, #89ff00, #00bcd4);

@@ -1,3 +1,19 @@
+/* StyleGuide Page Responsiveness */
+@media only screen and (max-width:950px){
+    .color-palette-box {
+        width: 40%;
+    }
+    code{
+        font-size:1em;
+    }
+}
+@media only screen and (max-width:590px){
+    .color-palette-box {
+        width: 100%;
+    }
+}
+
+
 /* Main page responsiveness */
 @media only screen and (max-width:950px){
     /* 768 */
@@ -8,12 +24,12 @@
     .main-container{
         padding-left: 0;
         width: 90%;
-
+        
     }
     .middle{
         padding-left: 0;
         width: 100%;
-
+        
     }
     .main-text p{
         width: 100%;
@@ -33,7 +49,7 @@
         right: -6em;
         width: 6em;
         height: 80px;
-
+        
     }
     nav h1:hover, nav h1:focus, nav h1:active {
         transition: 0.5s ease-in-out;
@@ -66,7 +82,7 @@
     nav{
         width: 8em;
         transform: translateX(-8em);
-
+        
     }
     nav.menu-hover {
         transform: translateX(-7em);
@@ -76,7 +92,7 @@
         right: -6em;
         width: 6em;
         height: 80px;
-
+        
     }
     nav h1:hover, nav h1:focus, nav h1:active {
         transition: 0.5s ease-in-out;
@@ -96,8 +112,8 @@
 
 
 /* Detail page response
- */
- @media only screen and (max-width:950px){
+*/
+@media only screen and (max-width:950px){
     .aop-head-text h1{
         font-size: 4.5em;
     }
@@ -105,7 +121,7 @@
         font-size: 1.8em;
     }
     .project-detail{
-        font-size: .9em;
+        font-size: .7em;
     }
     .aop-sub-container h2{
         font-size: 3em;
@@ -123,8 +139,8 @@
     .caption {
         max-width: 90%;
     }
- }
- @media only screen and (max-width:590px){
+}
+@media only screen and (max-width:590px){
     .aop-head-text h1{
         font-size: 4em;
     }
@@ -135,7 +151,7 @@
         width: 90%;
     }
     .project-detail{
-        font-size: .9em;
+        font-size: .6em;
     }
     .project-detail h3{
         margin: 0;
@@ -161,4 +177,4 @@
         max-width: 90%;
         font-size:.8em;
     }
- }
+}

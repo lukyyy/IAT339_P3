@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Luke's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="main/main.css">
+    <link rel="stylesheet" type="text/css" href="main/styleguide.css">
+    <link rel="stylesheet" type="text/css" href="main/grid.css">
+    
+    
+    <!-- Social Media Font Import -->
+    <!-- From: https://www.youtube.com/watch?v=fDm0WJ_66d0&list=WL&index=22&t=0s -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <!-- Font Import -->
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Poppins" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="menu-leftactive">
+        <h1>Luke Yang</h1>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="index.html#projectSection"><li>Project</li></a>
+            <a href="https://drive.google.com/open?id=1-PgQ113p-oiU-0hZsV3vRuuwj3BF4Fa5"><li>Resume</li></a>
+            <a href="#"><li>Style Guide</li></a>
+        </ul> 
+        
+        
+    </nav>
+    <main>
+        <header>
+            <div class="main-pic"></div>
+        </header>
+        <div class="styleguide-background">
+            <div class="styleguide-container">
+                <h1>Luke's Portfolio Styleguide</h1>
+                <section id="color-palette">
+                    <h2>Color Palette</h2>
+                    <div class="under-border"></div>
+                    <div class="color-palette-container">
+                        <div class="color-palette-box" id="palette1"><p>#030c29</p></div>
+                        <div class="color-palette-box" id="palette2"><p>#317D66</p></div>
+                        <div class="color-palette-box" id="palette3"><p>#87AFFF</p></div>
+                        <div class="color-palette-box" id="palette4"><p>#87AFFF</p></div>
+                        
+                    </div>
+                </section>
+                
+                <section id="text-element">
+                    <h2>Text Element</h2>
+                    <div class="under-border"></div>
+                    <h3><strong>Headings</strong></h3>
+                    
+                    <h4>CSS Selector</h4>
+                    <p> h1, h2, h3, h4</p>
+                    
+                    <h4>Sample Code</h4>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Heading 1&lt;/h1&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Heading 2&lt;/h2&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Heading 3&lt;/h3&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Heading 4&lt;/h4&gt;
+                    </code>
+                    
+                    <h4>Render Element</h4>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <div class="dotted-border"></div>
+                    
+                    <h3><strong>Paragraph</strong></h3>
+                    
+                    <h4>CSS Selector</h4>
+                    <p> 
+                        p
+                    </p>
+                    <h4>Sample Code</h4>
+                    <code> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is paragraph&lt;p&gt;
+                    </code>
+                    <h4>Render Element</h4>
+                    <p>This is paragraph</p>
+                    <div class="dotted-border"></div>
+                    
+                </section>
+                
+                <section id="interactive-element">
+                    <h2>Interactive Element</h2>
+                    <div class="under-border"></div>
+                    
+                    <h3><strong>Main Navigation</strong></h3>
+                    
+                    <h4>CSS Selector</h4>
+                    <p> 
+                        nav h1
+                    </p>
+                    
+                    <h4>Sample Code</h4>
+                    <code> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="menu-leftactive"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Luke Yang&lt;/h1&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;
+                        
+                    </code>
+                    <h4>Render Element</h4>
+                    <div class="styleguide-nav">
+                        <nav class="menu-leftactive">
+                            <h1>Luke Yang</h1>
+                        </nav>
+                    </div>
+                    
+                    <div class="dotted-border"></div>
+                    
+                    
+                    <h3><strong>Navigation Link</strong></h3>
+                    
+                    <h4>CSS Selector</h4>
+                    <p> 
+                        a
+                    </p>
+                    <h4>Sample Code</h4>
+                    <code> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;See Detail&lt;/a&gt;
+                    </code>
+                    <h4>Render Element</h4>
+                    <div class="styleguide-a">
+                        <a href="#">See Detail</a>
+                    </div>
+                    <div class="dotted-border"></div>
+                </section>
+                
+                <section id="combine-element">
+                    <h2>Interactive Element</h2>
+                    <div class="under-border"></div>
+                    <h3><strong>Grid Items</strong></h3>
+                    
+                    <h4>CSS Selector</h4>
+                    <p> 
+                        .box, #box1, #box2, .content
+                    </p>
+                    <h4>Sample Code</h4>
+                    <code> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="box" id="box1"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="content" id="projectSection"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt; Adventure of Pergie&lt;/h3&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;2D platformer puzzle game. Help Pergie to reunite with his mother!  &lt;/p&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="adventrueOfPergie.html" id="anchorTag">See Detail&lt;/a&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="box" id ="box2"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="content"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;GamesBond&lt;/h3&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; Game review website that emphasizes public users' score versus cricts. Visit the website and join our community! &lt;/p&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="Gamesbond.html"&gt;See Detail&lt;/a&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                    </code>
+                    <h4>Render Element</h4>
+                    <div class="main-container">
+                        <div class="box" id="box1">
+                            <div class="content" id="projectSection">
+                                <h3> Adventure of Pergie</h3>
+                                <p>2D platformer puzzle game. Help Pergie to reunite with his mother!  </p>
+                                <a href="adventrueOfPergie.html" id="anchorTag">See Detail</a>
+                            </div>
+                        </div>
+                        <div class="box" id ="box2">
+                            <div class="content">
+                                <h3>GamesBond</h3>
+                                <p> Game review website that emphasizes public users' score versus cricts. Visit the website and join our community! </p>
+                                <a href="Gamesbond.html">See Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dotted-border"></div>
+                    
+                    
+                    
+                    <h3><strong>Youtube With Description</strong></h3>
+                    
+                    <h4>CSS Selector</h4>
+                    <p> 
+                        .container .col-10 .iframe, iframe
+                    </p>
+                    <h4>Sample Code</h4>
+                    <code> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="aop-header-detail"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-10"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="iframe-container"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EpW96_OR_8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt; &lt;/iframe&gt;                       
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-10"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="project-detail"&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Tool Used&lt;/h3&gt; &lt;p&gt;HTML/CSS, PHP/SQL, jQuery & AJax&lt;/p&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Team&lt;/h3&gt; &lt;p&gt; Kenny & Luke&lt;/p&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Role&lt;/h3&gt; &lt;p&gt;Coder/UX Designer&lt;p&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Goal&lt;/h3&gt; &lt;p&gt;Concept and detail function design and implementing functions of website and ensure all the functions are working. &lt;/p&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&gt;
+                    </code>
+                    <h4>Render Element</h4>
+                    <div class="aop-header-detail">
+                        <div class="col-10">
+                            <div class="iframe-container">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/EpW96_OR_8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <div class="project-detail">
+                                <h3>Tool Used</h3> <p>HTML/CSS, PHP/SQL, jQuery & AJax</p>
+                                <h3>Team</h3> <p> Kenny & Luke</p>
+                                <h3>Role</h3> <p>Coder/UX Designer</p>
+                                <h3>Goal</h3> <p>Concept and detail function design and implementing functions of website and ensure all the functions are working. </p>
+                                <br> 
+                            </div>
+                        </div>
+                    </div>    
+                    
+                    <div class="dotted-border"></div>
+                    
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js">
+        window.onload = function() {
+            var left=document.getElementById('.col-5-left').getBoundingClientRect().height;
+            var right=document.getElementById('.col-5-right').getBoundingClientRect().height;
+            if(left>right) {
+                document.getElementById('.col-5-right').style.height=left+"px";
+            }
+            else {
+                document.getElementById('.col-5-left').style.height=right+"px";
+            }
+        };
+    </script>
+    
+    <script>
+        
+        (function(){
+            var nav = $('nav'),
+            menu = $('nav h1'),
+            main = $('main'),
+            open = false,
+            hover = false;
+            
+            menu.on('click', function(){
+                open = !open ? true : false;
+                nav.toggleClass('menu-active');
+                main.toggleClass('menu-active');
+                nav.toggleClass('menu-hover');
+                main.toggleClass('menu-hover');
+                console.log(open);
+            });
+            
+            menu.hover(
+            function(){
+                if(!open){
+                    nav.addClass('menu-hover');
+                    main.addClass('menu-hover');
+                } else {
+                    nav.addClass('menu-unhover');
+                    main.addClass('menu-unhover');
+                }
+            }, function(){
+                nav.removeClass('menu-hover');
+                nav.removeClass('menu-hover');
+            }
+            )
+            
+        })();
+    </script>
+    
+    <footer> 
+        <div class="footer-container">
+            <div class="middle">
+                <a class="btn" href="https://www.facebook.com/profile.php?id=100004168532253&ref=bookmarks">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="btn" href="https://www.instagram.com/lukyyang/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="btn" href="https://www.youtube.com/channel/UC7h4_DZ3s2hKqH_2dwWWOtQ?view_as=subscriber">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
