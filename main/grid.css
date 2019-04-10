@@ -1,0 +1,107 @@
+/* Main page responsiveness */
+@media only screen and (max-width:950px){
+    /* 768 */
+    .main-text{
+        padding-left: 0;
+        width: 90%;
+    }
+    .main-container{
+        padding-left: 0;
+        width: 90%;
+
+    }
+    .middle{
+        padding-left: 0;
+        width: 100%;
+
+    }
+    .main-text p{
+        width: 100%;
+    }
+    nav{
+        width: 12em;
+        transform: translateX(-12em);
+    }
+    nav.menu-active {
+        transform: translateX(0);
+    }
+    nav.menu-hover {
+        transform: translateX(-11em);
+    }
+    nav h1{
+        font-size: 1.8em;
+        right: -6em;
+        width: 6em;
+        height: 80px;
+
+    }
+    nav h1:hover, nav h1:focus, nav h1:active {
+        transition: 0.5s ease-in-out;
+        font-size: 2.1em;
+    }
+    nav li{
+        font-size: 1.1em;
+    }
+    main.menu-active{
+        border-radius: 0.001px;
+        transform: translateX(12em) rotateY(8deg);
+    }
+}
+
+@media only screen and (max-width:590px){
+    .main-text h1{
+        font-size: 3em;
+    }
+    .main-text p{
+        font-size: 1em;
+    }
+    .main-container{
+        padding-top: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        grid-gap: 80px 20px;
+    }
+    .middle{
+        width: 100%;
+    }
+    nav{
+        width: 8em;
+        transform: translateX(-8em);
+
+    }
+    nav.menu-hover {
+        transform: translateX(-7em);
+    }
+    nav h1{
+        font-size: 1.8em;
+        right: -6em;
+        width: 6em;
+        height: 80px;
+
+    }
+    nav h1:hover, nav h1:focus, nav h1:active {
+        transition: 0.5s ease-in-out;
+        font-size: 2.1em;
+    }
+    nav li{
+        font-size: 1.1em;
+    }
+    main.menu-active{
+        border-radius: 0.001px;
+        transform: translateX(8em) rotateY(8deg);
+    }
+}
+
+
+/* Detail page response
+ */
+ @media only screen and (max-width:950px){
+    /* #gamesbond-col-6 {
+        width: 100%;
+    }
+    .col-6{
+        width: 100%;
+    } */
+ }
+ @media only screen and (max-width:590px){
+
+ }
