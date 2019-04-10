@@ -92,16 +92,73 @@
 }
 
 
+
+
+
 /* Detail page response
  */
  @media only screen and (max-width:950px){
-    /* #gamesbond-col-6 {
-        width: 100%;
+    .aop-head-text h1{
+        font-size: 4.5em;
     }
-    .col-6{
-        width: 100%;
-    } */
+    .aop-head-text h2{
+        font-size: 1.8em;
+    }
+    .project-detail{
+        font-size: .9em;
+    }
+    .aop-sub-container h2{
+        font-size: 3em;
+    }
+    .aop-sub-container p{
+        font-size: 1em;
+        width: 80%;
+    }
+    .aop-pic{
+        padding-bottom: 30px;
+    }
+    .aop-pic img{
+        max-width: 90%;
+    }
+    .caption {
+        max-width: 90%;
+    }
  }
  @media only screen and (max-width:590px){
-
+    .aop-head-text h1{
+        font-size: 4em;
+    }
+    .aop-head-text h2{
+        font-size: 1.5em;
+    }
+    .aop-main-container{
+        width: 90%;
+    }
+    .project-detail{
+        font-size: .9em;
+    }
+    .project-detail h3{
+        margin: 0;
+    }
+    .project-detail p{
+        margin: 0;
+    }
+    .aop-sub-container h2{
+        font-size: 2.8em;
+    }
+    .aop-sub-container p{
+        font-size: 1em;
+        width: 90%;
+        padding: 0 0 10px 0;
+    }
+    .aop-pic{
+        padding-bottom: 30px;
+    }
+    .aop-pic img{
+        max-width: 90%;
+    }
+    .caption {
+        max-width: 90%;
+        font-size:.8em;
+    }
  }

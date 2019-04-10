@@ -31,14 +31,14 @@ main.menu-active{
 }
 
 .aop-head-text h1 {
-    font-size: 5em;
+    font-size: 6em;
     color: #1E7259;
     margin:0;
 }
 
 .aop-head-text h2{
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2em;
+    font-size: 2.3em;
     color: white;
     magin:0;
     margin-block-start: 0.2em;
@@ -48,44 +48,36 @@ main.menu-active{
 /* rgba(23, 44, 87) */
 
 .aop-header-detail {
-    display: table;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
-    margin: 0;
+    justify-content: center;
     padding: 5px;
+    margin-right: 10px;
+    margin: 0;
+    height: auto;
     background-color: rgb(49, 125, 102);
     border: 1px black solid;
     box-shadow: 5px 10px black;
 }
-.col-6{
-    display: table-cell;
-    width: 59%;
+.col-10{
+    width: 100%;
 
     /* border: 2px red solid; */
     padding: 0;
     position: relative; 
 }
 
-#gamesbond-col-6{
-    width: 50%;
-}
-
-.col-4{
-    display: table-cell;
-    width: 39%;
-    /* border: 2px red solid; */
-    padding: 0;
-    position: relative; 
-}
 
 
 /* Project Detail Text parts */
 .project-detail{
-    position: absolute;
-    margin: 0;
-    font-size: 1em;
+    position: relative;
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 
 }
 .project-detail h3{
@@ -104,7 +96,7 @@ main.menu-active{
     margin: auto;
     padding-bottom: 56.25%; 
     height: 0;
-    border-right: 2px dotted #FFD7CF;
+    border-bottom: 2px dotted #FFD7CF;
 
 }
 
@@ -118,7 +110,7 @@ main.menu-active{
 
 .aop-sub-container {
     width: 100%;
-    margin: 200px 0 0 0;
+    margin: 100px 0 0 0;
     height: auto;
     /* background: rgba(80,204,167, 0.9); */
     box-shadow:inset 0 0 0 2000px rgba(80,204,167, 0.7);
@@ -131,27 +123,28 @@ main.menu-active{
     font-family: 'Dokdo', cursive;
     font-size: 4em;
     color: white;
-    margin-block-start: 0.8em;
+    margin-block-start: 0em;
     margin-block-end: 0.5em;
 }
 
 .aop-sub-container p{
-    width: 50%;
+    width: 60%;
     margin: auto;
     text-align: center;
     font-size: 1.3em;
     color: white;
-    padding: 0 0 50px 0;
+    padding: 0 0 100px 0;
 }
 
 .aop-pic{
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 .aop-pic img{
     display: block;
     margin: auto;
-    max-width: 60%;
+    max-width: 70%;
     
 }
 
@@ -163,7 +156,7 @@ main.menu-active{
     color: white;
     display: block;
     margin: auto;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .footer-container{
